@@ -6,7 +6,7 @@ email: et3216@gmail.com
 description: "漂流中的全端工程師，"
 keyword: "盧毅, Web, JavaScript, 前端, Ruby on rails, ruby, 接案工程師, rails 接案,css"
 url: "https://lululala.me"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "lustan3216.github.io"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
