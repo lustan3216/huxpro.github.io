@@ -1,6 +1,6 @@
 # Site settings
 title: Lululala Blog
-SEOTitle: 盧毅的博客 | Lululala Blog
+SEOTitle: LUYI的博客 | Lululala Blog
 header-img: img/home-bg.jpg
 email: et3216@gmail.com
 description: "漂流中的全端工程師，"
@@ -12,8 +12,10 @@ baseurl: ""                             # for example, '/blog' if your blog host
 
 # SNS settings
 RSS: false
-github_username:    lustan3216
-facebook_username:  ru.yi.61
+github_username: lustan3216
+facebook_username: ru.yi.61
+medium_username: @et3216
+cakeresume_username: luyi_cv-22
 # linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -65,7 +67,7 @@ ga_domain: lululala.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "不是在Coding,就是在Coding的路上"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
