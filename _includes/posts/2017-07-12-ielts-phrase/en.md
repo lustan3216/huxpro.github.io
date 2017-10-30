@@ -1,0 +1,5 @@
+- be married to 
+- be obsessed with
+- accounts of (佔比例) 
+- tap your phone
+- unleash creativity
