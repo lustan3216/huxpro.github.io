@@ -15,6 +15,6 @@ tags:
 
 <!-- English Version -->
 <div class="en post-container">
-    {% capture about_en %}{% include posts/2017-07-12-ielts-chart-wrting-skill/en.md %}{% endcapture %}
+    {% capture about_en %}{% include posts/2017-07-12-ielts-chart-writing-skill/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
