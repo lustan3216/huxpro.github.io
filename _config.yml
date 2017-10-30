@@ -1,6 +1,6 @@
 # Site settings
-title: Lululala Blog
-SEOTitle: LUYI的博客 | Lululala Blog
+title: LUYI Blog
+SEOTitle: LUYI的博客 | LUYI Blog
 header-img: img/home-bg.jpg
 email: et3216@gmail.com
 description: "漂流中的全端工程師，"
@@ -47,7 +47,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: lululala
+disqus_username: luyi
 
 # Netease setttings
 netease_comment: false
@@ -60,7 +60,7 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: lululala.me
+ga_domain: luyi.me
 
 
 
