@@ -1,6 +1,5 @@
 > The 80/20 Rule
 
-
 ##### Epic Article Url
 
 - [嚇死你的RubyMine怎麼帶我向上飛 分享它如何解省我的時間][4]

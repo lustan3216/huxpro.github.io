@@ -11,9 +11,10 @@ multilingual: true
 tags:
     - Sidekiq
 --- 
+ 
 
-> I need to exam IELTS, so i'm trying to write article by english. 
-> If you find out some grammar faults or technical problems, it's welcome to correct me in reply below.
+> I am preparing for the IELTS exam, so i’m trying to write articles in english.
+> If you find any grammatical errors or technical issues, please do not hesitate to correct me in reply section below.
 
 ### Do not try to delete jobs 
 In my case, there were more than a million jobs in my process, so query a job just like looking for a needle in a haystack.
