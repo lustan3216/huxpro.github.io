@@ -39,22 +39,20 @@ So why don't you just check current job which the instance dose really need to e
 # Migrate start_at, resume_jid, end_at, pause_jid column on ad table.
 # After any resume transition, it's will set the jid of last job in db.
  
-after_transition any => :resume do |ad, transition|
-  pause_jid = PauseJob.set(wait_until: Time.current + 60.days).perform_later(ad.id).provider_job_id
+  after_transition any => :resume do |ad, transition|
+    pause_jid = PauseJob.set(wait_until: Time.current + 60.days).perform_later(ad.id).provider_job_id
   
-  ad.update(resume_jid: nil, pause_jid: pause_jid)
-end   
+    ad.update(resume_jid: nil, pause_jid: pause_jid)
+  end   
       
 # When job perform later, it will examine the provider_job_id does same with pause_jid the last time i set.
 # If true then perform, and false then skip. 
 
-def perform(ad_id)
-    ad = Ad.find_by_id(ad_id)
-    if ad
-      if provider_job_id == ad.pause_jid
+  def perform(ad_id)
+    ad = Ad.find_by_id(ad_id)   
+      if ad && provider_job_id == ad.pause_jid
         ad.pause
-      end
-    end
+      end   
   end
 ```
 Just set xxx_jid column on table for check. It ought significantly reduce the bugs and more simpler than delete a job in large data.
@@ -71,13 +69,13 @@ In order to prevent you forget to separate db in production just in case, you co
 It is important to note that to configure the location of Redis, you must define both the Sidekiq.configure_server and Sidekiq.configure_client blocks. To do this put the following code into config/initializers/sidekiq.rb.
   
 ```rb
-Sidekiq.configure_server do |config|
-  config.redis = { url: 'redis://redis.example.com:7372/12' }
-end
+  Sidekiq.configure_server do |config|
+    config.redis = { url: 'redis://redis.example.com:7372/12' }
+  end
 
-Sidekiq.configure_client do |config|
-  config.redis = { url: 'redis://redis.example.com:7372/12' }
-end
+  Sidekiq.configure_client do |config|
+    config.redis = { url: 'redis://redis.example.com:7372/12' }
+  end
 ```
 
 [REFERENCE](https://github.com/mperham/sidekiq/wiki/Using-Redis)
