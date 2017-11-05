@@ -35,3 +35,4 @@ tags:
 - opposite / conversely
 - preserve (beforehand done the protection) / reserve (for future) / conserve (different way to keep)
   - She is reserved.  Means the girl is introvert
+- exhausted / worn out / 
