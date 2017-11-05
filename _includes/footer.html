@@ -1,83 +1,83 @@
 <!-- Footer -->
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul class="list-inline text-center">
-                    {% if site.RSS %}
-                    <li>
-                        <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          {% if site.RSS %}
+          <li>
+            <a href="{{ '/feed.xml' | prepend: site.baseurl }}">
                         <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
                                     </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.medium_username %}
-                    <li>
-                        <a target="_blank" href="https://medium.com/@{{ site.medium_username }}">
+            </a>
+          </li>
+          {% endif %}
+          {% if site.medium_username %}
+          <li>
+            <a target="_blank" href="https://medium.com/@{{ site.medium_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-medium fa-stack-1x fa-inverse" aria-hidden="true"></i>
                                     </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.cakeresume_username %}
-                    <li>
-                        <a target="_blank" href="https://www.cakeresume.com/{{ site.cakeresume_username }}">
+            </a>
+          </li>
+          {% endif %}
+          {% if site.cakeresume_username %}
+          <li>
+            <a target="_blank" href="https://www.cakeresume.com/{{ site.cakeresume_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-address-card-o fa-stack-1x fa-inverse"></i>
                                     </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.facebook_username %}
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
+            </a>
+          </li>
+          {% endif %}
+          {% if site.facebook_username %}
+          <li>
+            <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                     </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.github_username %}
-                    <li>
-                        <a target="_blank" href="https://github.com/{{ site.github_username }}">
+            </a>
+          </li>
+          {% endif %}
+          {% if site.github_username %}
+          <li>
+            <a target="_blank" href="https://github.com/{{ site.github_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                                     </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if site.linkedin_username %}
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+            </a>
+          </li>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                                     </span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
-                    <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
-                    </iframe>
-                </p>
-            </div>
-        </div>
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+          <br>
+          Theme by <a href="http://huangxuan.me">Hux</a> |
+          <iframe
+                  style="margin-left: 2px; margin-bottom:-5px;"
+                  frameborder="0" scrolling="0" width="100px" height="20px"
+                  src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+          </iframe>
+        </p>
+      </div>
     </div>
+  </div>
 </footer>
 
 <!-- jQuery -->
@@ -98,14 +98,14 @@
 
 <!-- async load function -->
 <script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
+function async(u, c) {
+    var d = document, t = 'script',
+        o = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+}
 </script>
 
 <!--
@@ -151,25 +151,6 @@
 </script>
 
 
-<!-- Google Analytics -->
-{% if site.ga_track_id %}
-<script>
-    // dynamic User by Luyi
-    var _gaId = '{{ site.ga_track_id }}';
-    var _gaDomain = '{{ site.ga_domain }}';
-
-    // Originial
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', _gaId, _gaDomain);
-    ga('send', 'pageview');
-</script>
-{% endif %}
-
-
 <!-- Side Catalog -->
 {% if page.catalog %}
 <script type="text/javascript">
@@ -198,7 +179,7 @@
             l = $('<li class="'+n+'_nav"></li>').append(c);
             $(selector).append(l);
         });
-      
+
         return true;
     }
 
@@ -238,7 +219,6 @@
 <!-- Handle Language Change -->
 <script type="text/javascript">
     // get nodes
-    $(
     var $zh = document.querySelector(".zh");
     var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
@@ -250,40 +230,40 @@
 
     // handle render
     function _render(_hash){
-      var _hash = _hash || window.location.hash;
-      // en
-      if(_hash == "#en"){
-        $select.selectedIndex = 1;
-        $en.style.display = "block";
-        $en.classList.add("active");
-        $zh.style.display = "none";
-        $zh.classList.remove("active");
-        // zh by default
-      }else{
-        // not trigger onChange, otherwise cause a loop call.
-        $select.selectedIndex = 0;
-        $zh.style.display = "block";
-        $zh.classList.add("active");
-        $en.style.display = "none";
-        $en.classList.remove("active");
-      }
-      // interop with catalog
-      if ("{{ page.catalog }}") generateCatalog(".catalog-body");
+        var _hash = _hash || window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $en.classList.add("active");
+            $zh.style.display = "none";
+            $zh.classList.remove("active");
+            // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $zh.classList.add("active");
+            $en.style.display = "none";
+            $en.classList.remove("active");
+        }
+        // interop with catalog
+        if ("{{ page.catalog }}") generateCatalog(".catalog-body");
     }
 
     // handle select change
     function onLanChange(index){
-      if(index == 0){
-        _hash = "#zh"
-      }else{
-        _hash = "#en"
-      }
-      _render(_hash)
+        if(index == 0){
+            _hash = "#zh"
+        }else{
+            _hash = "#en"
+        }
+        _render(_hash)
     }
 
     // init
-    _render();
-    )
+    $(_render())
     
+
 </script>
 {% endif %}
